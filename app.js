@@ -6,10 +6,10 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/views/index.html');
+        res.sendFile(__dirname + '/views/index.html');
 });
 
-const PORT = 3000;
+const PORT = 5052;
 
 app.listen(PORT, () => {
     console.log(`Сервер запущен на порту ${PORT}`);
